@@ -13,12 +13,14 @@
 		05A483FA272161DD0054BEBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A483F8272161DD0054BEBA /* Main.storyboard */; };
 		05A483FC272161E00054BEBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A483FB272161E00054BEBA /* Assets.xcassets */; };
 		05A483FF272161E00054BEBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A483FD272161E00054BEBA /* LaunchScreen.storyboard */; };
-		05A4840B2722A2860054BEBA /* EmpleadosEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4840A2722A2860054BEBA /* EmpleadosEntry.swift */; };
-		05A4840D2722A6690054BEBA /* EmpleadosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4840C2722A6690054BEBA /* EmpleadosManager.swift */; };
+		05A4840B2722A2860054BEBA /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4840A2722A2860054BEBA /* Employee.swift */; };
+		05A4840D2722A6690054BEBA /* EmployeesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4840C2722A6690054BEBA /* EmployeesManager.swift */; };
+		05A4840F2726A9300054BEBA /* EmployeesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4840E2726A9300054BEBA /* EmployeesTableViewController.swift */; };
+		05A484132727E9DD0054BEBA /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A484122727E9DD0054BEBA /* EmployeeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05A483EF272161DD0054BEBA /* Empleats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Empleats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A483EF272161DD0054BEBA /* Employees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Employees.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A483F2272161DD0054BEBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05A483F4272161DD0054BEBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		05A483F6272161DD0054BEBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,8 +28,10 @@
 		05A483FB272161E00054BEBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05A483FE272161E00054BEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05A48400272161E00054BEBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05A4840A2722A2860054BEBA /* EmpleadosEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpleadosEntry.swift; sourceTree = "<group>"; };
-		05A4840C2722A6690054BEBA /* EmpleadosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpleadosManager.swift; sourceTree = "<group>"; };
+		05A4840A2722A2860054BEBA /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		05A4840C2722A6690054BEBA /* EmployeesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesManager.swift; sourceTree = "<group>"; };
+		05A4840E2726A9300054BEBA /* EmployeesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesTableViewController.swift; sourceTree = "<group>"; };
+		05A484122727E9DD0054BEBA /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,7 @@
 		05A483F0272161DD0054BEBA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				05A483EF272161DD0054BEBA /* Empleats.app */,
+				05A483EF272161DD0054BEBA /* Employees.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				05A483F6272161DD0054BEBA /* ViewController.swift */,
+				05A4840E2726A9300054BEBA /* EmployeesTableViewController.swift */,
+				05A484122727E9DD0054BEBA /* EmployeeTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -83,8 +89,8 @@
 		05A484092722A2170054BEBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				05A4840A2722A2860054BEBA /* EmpleadosEntry.swift */,
-				05A4840C2722A6690054BEBA /* EmpleadosManager.swift */,
+				05A4840A2722A2860054BEBA /* Employee.swift */,
+				05A4840C2722A6690054BEBA /* EmployeesManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		05A483EE272161DD0054BEBA /* Empleats */ = {
+		05A483EE272161DD0054BEBA /* Employees */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05A48403272161E00054BEBA /* Build configuration list for PBXNativeTarget "Empleats" */;
+			buildConfigurationList = 05A48403272161E00054BEBA /* Build configuration list for PBXNativeTarget "Employees" */;
 			buildPhases = (
 				05A483EB272161DD0054BEBA /* Sources */,
 				05A483EC272161DD0054BEBA /* Frameworks */,
@@ -104,9 +110,9 @@
 			);
 			dependencies = (
 			);
-			name = Empleats;
+			name = Employees;
 			productName = Empleats;
-			productReference = 05A483EF272161DD0054BEBA /* Empleats.app */;
+			productReference = 05A483EF272161DD0054BEBA /* Employees.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 05A483EA272161DD0054BEBA /* Build configuration list for PBXProject "Empleats" */;
+			buildConfigurationList = 05A483EA272161DD0054BEBA /* Build configuration list for PBXProject "Employees" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				05A483EE272161DD0054BEBA /* Empleats */,
+				05A483EE272161DD0054BEBA /* Employees */,
 			);
 		};
 /* End PBXProject section */
@@ -160,11 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A4840F2726A9300054BEBA /* EmployeesTableViewController.swift in Sources */,
+				05A484132727E9DD0054BEBA /* EmployeeTableViewCell.swift in Sources */,
 				05A483F7272161DD0054BEBA /* ViewController.swift in Sources */,
 				05A483F3272161DD0054BEBA /* AppDelegate.swift in Sources */,
 				05A483F5272161DD0054BEBA /* SceneDelegate.swift in Sources */,
-				05A4840B2722A2860054BEBA /* EmpleadosEntry.swift in Sources */,
-				05A4840D2722A6690054BEBA /* EmpleadosManager.swift in Sources */,
+				05A4840B2722A2860054BEBA /* Employee.swift in Sources */,
+				05A4840D2722A6690054BEBA /* EmployeesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +373,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05A483EA272161DD0054BEBA /* Build configuration list for PBXProject "Empleats" */ = {
+		05A483EA272161DD0054BEBA /* Build configuration list for PBXProject "Employees" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05A48401272161E00054BEBA /* Debug */,
@@ -374,7 +382,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05A48403272161E00054BEBA /* Build configuration list for PBXNativeTarget "Empleats" */ = {
+		05A48403272161E00054BEBA /* Build configuration list for PBXNativeTarget "Employees" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05A48404272161E00054BEBA /* Debug */,
