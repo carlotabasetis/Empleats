@@ -15,7 +15,8 @@ class EmpleatsTableViewController: UITableViewController {
         super.viewDidLoad()
     }
 
-
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -37,5 +38,15 @@ class EmpleatsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 160
+    }
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? ViewController {
+            if let cell = sender as? EmployeeTableViewCell {
+                let index = tableView.indexPath(for: cell)?.row
+                destinationVC.employee = employeeManager.returnEmployees()[index ?? 0]
+            }
+        }
     }
 }
