@@ -67,15 +67,6 @@
                                                 <constraint firstAttribute="width" constant="150" id="NDL-mM-Qka"/>
                                             </constraints>
                                         </stackView>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwf-C7-wEd">
-                                            <rect key="frame" x="20" y="11" width="374" height="149"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" title=""/>
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" identifier="goToDetails" id="cau-2n-U2h"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="vty-uC-PLt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jgE-Jz-tLK" secondAttribute="trailing" constant="5" id="3pl-0H-hq0"/>
@@ -89,6 +80,7 @@
                                     <outlet property="chargeLabel" destination="3I7-B6-oWX" id="pba-WP-uRD"/>
                                     <outlet property="employeeImageView" destination="jgE-Jz-tLK" id="gs8-1x-wfw"/>
                                     <outlet property="nameLabel" destination="JSd-m8-KGT" id="HQT-nm-CTZ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goToDetails" id="dJw-Xh-JLB"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

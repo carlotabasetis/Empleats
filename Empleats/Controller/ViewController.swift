@@ -4,7 +4,7 @@
 //
 //  Created by Carlota on 21/10/21.
 //
-
+import Foundation
 import UIKit
 
 class ViewController: UIViewController {
@@ -26,6 +26,9 @@ class ViewController: UIViewController {
     
     func setupUI() {
         nombreTextField.text = employee?.name
+        cargoTextField.text = employee?.charge
+        departamentoTextField.text = employee?.department
+        edadTextField.text = String(employee?.age)
     }
 
 
@@ -34,6 +37,7 @@ class ViewController: UIViewController {
 extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        setupUI()
         //updateEmployees()
         return true
     }
